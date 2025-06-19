@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Fullstack Developer - Nama Lengkap Anda</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scroll-behavior for smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-100 text-gray-800">
+
+    <!-- Bagian Header -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white p-6 shadow-lg rounded-b-2xl">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <h1 class="text-4xl font-bold tracking-tight">Nama Lengkap Anda</h1>
+                <p class="text-xl mt-1 opacity-90">Fullstack Developer</p>
+            </div>
+            <nav>
+                <ul class="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-6">
+                    <li><a href="#about" class="hover:text-blue-200 transition duration-300">Tentang Saya</a></li>
+                    <li><a href="#skills" class="hover:text-blue-200 transition duration-300">Keterampilan</a></li>
+                    <li><a href="#projects" class="hover:text-blue-200 transition duration-300">Proyek</a></li>
+                    <li><a href="#contact" class="hover:text-blue-200 transition duration-300">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Bagian Tentang Saya -->
+    <section id="about" class="container mx-auto p-6 my-8 bg-white shadow-xl rounded-xl">
+        <h2 class="text-3xl font-semibold text-blue-700 mb-6 border-b-2 pb-2 border-blue-300">Tentang Saya</h2>
+        <div class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
+            <div class="flex-shrink-0">
+                <img
+                    src="https://placehold.co/200x200/A78BFA/ffffff?text=Foto+Anda"
+                    alt="Profil Anda"
+                    class="w-48 h-48 rounded-full object-cover shadow-lg border-4 border-indigo-300"
+                    onerror="this.onerror=null;this.src='https://placehold.co/200x200/cccccc/333333?text=Foto+Tidak+Tersedia';"
+                />
+            </div>
+            <div class="text-lg leading-relaxed text-gray-700">
+                <p class="mb-3">
+                    Halo! Saya seorang *Fullstack Developer* dengan pengalaman dalam membangun aplikasi web yang efisien, skalabel, dan ramah pengguna. Saya memiliki passion dalam menciptakan solusi teknologi yang inovatif dan memecahkan masalah kompleks.
+                </p>
+                <p>
+                    Saya mahir dalam mengembangkan baik di sisi *frontend* maupun *backend*, dengan pemahaman kuat tentang basis data dan arsitektur sistem. Saya selalu bersemangat untuk mempelajari teknologi baru dan menerapkan praktik terbaik dalam setiap proyek.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Keterampilan -->
+    <section id="skills" class="container mx-auto p-6 my-8 bg-white shadow-xl rounded-xl">
+        <h2 class="text-3xl font-semibold text-blue-700 mb-6 border-b-2 pb-2 border-blue-300">Keterampilan</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Keterampilan Frontend -->
+            <div>
+                <h3 class="text-2xl font-medium text-indigo-600 mb-4 flex items-center">
+                    <!-- Icon SVG untuk Frontend (Contoh: monitor/web dev icon) -->
+                    <svg class="w-6 h-6 mr-2 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-1.25-3M15 10V5l-1-1H9l-1 1v5m5 0h.01M12 12h.01M12 15h.01M12 18h.01M7 12h.01M17 12h.01M7 15h.01M17 15h.01M7 18h.01M17 18h.01"></path></svg>
+                    Frontend
+                </h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>React.js, Vue.js, Angular (Pilih yang relevan)</li>
+                    <li>JavaScript (ES6+), TypeScript</li>
+                    <li>HTML5, CSS3, Tailwind CSS</li>
+                    <li>Redux, Vuex (untuk manajemen state)</li>
+                </ul>
+            </div>
+
+            <!-- Keterampilan Backend -->
+            <div>
+                <h3 class="text-2xl font-medium text-indigo-600 mb-4 flex items-center">
+                    <!-- Icon SVG untuk Backend (Contoh: server/database icon) -->
+                    <svg class="w-6 h-6 mr-2 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"></path></svg>
+                    Backend
+                </h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>Node.js (Express.js, NestJS)</li>
+                    <li>Python (Django, Flask)</li>
+                    <li>PHP (Laravel, CodeIgniter)</li>
+                    <li>Go, Java (Spring Boot) (Pilih yang relevan)</li>
+                    <li>RESTful APIs, GraphQL</li>
+                </ul>
+            </div>
+
+            <!-- Keterampilan Basis Data & DevOps -->
+            <div>
+                <h3 class="text-2xl font-medium text-indigo-600 mb-4 flex items-center">
+                    <!-- Icon SVG untuk Database/DevOps (Contoh: cloud/database icon) -->
+                    <svg class="w-6 h-6 mr-2 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10m0 0h16M4 17l4-4 4 4 4-4 4 4"></path></svg>
+                    Basis Data & Lainnya
+                </h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>PostgreSQL, MySQL, MongoDB</li>
+                    <li>Redis, Elasticsearch</li>
+                    <li>Docker, Kubernetes (dasar)</li>
+                    <li>Git, GitHub/GitLab</li>
+                    <li>AWS, Google Cloud (dasar)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Proyek -->
+    <section id="projects" class="container mx-auto p-6 my-8 bg-white shadow-xl rounded-xl">
+        <h2 class="text-3xl font-semibold text-blue-700 mb-6 border-b-2 pb-2 border-blue-300">Proyek</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Proyek 1 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-2xl font-semibold text-indigo-700 mb-2">Nama Proyek 1</h3>
+                <p class="text-gray-600 mb-4">
+                    Deskripsi singkat proyek ini. Jelaskan tujuan, fitur utama, dan masalah yang dipecahkan.
+                </p>
+                <p class="text-sm font-medium text-gray-500 mb-3">
+                    <strong>Teknologi:</strong> React, Node.js, Express, MongoDB, Tailwind CSS
+                </p>
+                <div class="flex space-x-3">
+                    <a href="#" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300 text-sm">
+                        Lihat Demo
+                        <!-- Icon SVG untuk Demo -->
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
+                    <a href="#" class="inline-flex items-center px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-800 transition duration-300 text-sm">
+                        Kode Sumber
+                        <!-- Icon SVG untuk Kode Sumber -->
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 6l-4 4 4 4"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Proyek 2 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-2xl font-semibold text-indigo-700 mb-2">Nama Proyek 2</h3>
+                <p class="text-gray-600 mb-4">
+                    Deskripsi singkat proyek ini. Jelaskan tujuan, fitur utama, dan masalah yang dipecahkan.
+                </p>
+                <p class="text-sm font-medium text-gray-500 mb-3">
+                    <strong>Teknologi:</strong> Vue.js, Laravel, MySQL, Tailwind CSS
+                </p>
+                <div class="flex space-x-3">
+                    <a href="#" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300 text-sm">
+                        Lihat Demo
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
+                    <a href="#" class="inline-flex items-center px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-800 transition duration-300 text-sm">
+                        Kode Sumber
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 6l-4 4 4 4"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Proyek 3 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-2xl font-semibold text-indigo-700 mb-2">Nama Proyek 3</h3>
+                <p class="text-gray-600 mb-4">
+                    Deskripsi singkat proyek ini. Jelaskan tujuan, fitur utama, dan masalah yang dipecahkan.
+                </p>
+                <p class="text-sm font-medium text-gray-500 mb-3">
+                    <strong>Teknologi:</strong> Python, Flask, PostgreSQL, Tailwind CSS
+                </p>
+                <div class="flex space-x-3">
+                    <a href="#" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300 text-sm">
+                        Lihat Demo
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
+                    <a href="#" class="inline-flex items-center px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-800 transition duration-300 text-sm">
+                        Kode Sumber
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 6l-4 4 4 4"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Kontak -->
+    <section id="contact" class="container mx-auto p-6 my-8 bg-white shadow-xl rounded-xl">
+        <h2 class="text-3xl font-semibold text-blue-700 mb-6 border-b-2 pb-2 border-blue-300">Kontak</h2>
+        <p class="text-lg text-gray-700 mb-4">
+            Tertarik untuk berkolaborasi atau ingin mengetahui lebih lanjut? Jangan ragu untuk menghubungi saya melalui saluran berikut:
+        </p>
+        <div class="flex flex-col space-y-4 text-lg">
+            <div class="flex items-center">
+                <svg class="w-6 h-6 mr-3 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                Email: <a href="mailto:emailanda@example.com" class="ml-2 text-blue-600 hover:underline">emailanda@example.com</a>
+            </div>
+            <div class="flex items-center">
+                <svg class="w-6 h-6 mr-3 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.05 11.25V9a2 2 0 012-2h14a2 2 0 012 2v2.25m-4.5 9.75h-9a2 2 0 01-2-2V13.5a2 2 0 012-2h9a2 2 0 012 2v2.25a2 2 0 01-2 2z"></path></svg>
+                LinkedIn: <a href="https://www.linkedin.com/in/namaanda" target="_blank" rel="noopener noreferrer" class="ml-2 text-blue-600 hover:underline">linkedin.com/in/namaanda</a>
+            </div>
+            <div class="flex items-center">
+                <svg class="w-6 h-6 mr-3 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19l-7-7 7-7m2 14l7-7-7-7"></path></svg>
+                GitHub: <a href="https://github.com/namaanda" target="_blank" rel="noopener noreferrer" class="ml-2 text-blue-600 hover:underline">github.com/namaanda</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Footer -->
+    <footer class="bg-gray-800 text-white p-6 mt-8 rounded-t-2xl">
+        <div class="container mx-auto text-center text-sm">
+            &copy; <script>document.write(new Date().getFullYear())</script> Nama Lengkap Anda. Hak Cipta Dilindungi.
+        </div>
+    </footer>
+
+</body>
+</html>
